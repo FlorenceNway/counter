@@ -45,7 +45,7 @@ const incrementBtn = document.querySelector('#increment')
     })
 
 
-//--- Auto Increment Button ----    
+//--- Auto Decrement Button ----    
 let id;
 const autoDecrementBtn = document.querySelector('#auto_decrement')
 //const dec_interval = setInterval(auto_dec, 1000)
@@ -60,7 +60,7 @@ const dec_interval = autoDecrementBtn.addEventListener('click', (e) => {
         id = setInterval(auto_dec, 1000)
 })
     
-//--- Auto increment Button ------
+//--- Auto Increment Button ------
 const autoIncrementBtn = document.querySelector('#auto_increment')
 
 function auto_inc() {
