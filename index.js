@@ -18,11 +18,6 @@ const HandleSetStep = () => {
     const input = document.querySelector('#step');
     step = parseInt(input.value)
 
-//    input.addEventListener('change',(e) => {
-//         if(Number.isInteger(e.target.value)){
-//             step = e.target.value
-//         }
-//     })
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         step = Number(input.value);
