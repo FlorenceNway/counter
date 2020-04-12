@@ -13,25 +13,28 @@ const action = (symbol) => {
     counter_value.innerText = counter;
 }
 
-const handleSetStep = () => {
-    const setStepBtn = document.querySelector('.step_form button')
+const HandleSetStep = () => {
+    const form = document.querySelector('.step_form')
     const input = document.querySelector('#step');
-    step = input.value;
+    step = parseInt(input.value)
 
-    input.addEventListener('change',(e) => {
-        step = e.target.value
-    })
-
-    setStepBtn.addEventListener('click', (e) => {
+//    input.addEventListener('change',(e) => {
+//         if(Number.isInteger(e.target.value)){
+//             step = e.target.value
+//         }
+//     })
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        step = Number(input.value);
         step_value.innerText = step;
-        
         input.value = 1;
     })
 }
+    
+HandleSetStep();
 
 const decrementBtn = document.querySelector('#decrement')
     decrementBtn.addEventListener('click',(e) => {
-        step = parseInt(step_value.innerText)
             action('-')
         
     })
@@ -39,7 +42,6 @@ const decrementBtn = document.querySelector('#decrement')
 
 const incrementBtn = document.querySelector('#increment')
     incrementBtn.addEventListener('click',(e) => {
-        step = parseInt(step_value.innerText)
             action("+")
         
     })
@@ -50,8 +52,6 @@ let id;
 const autoDecrementBtn = document.querySelector('#auto_decrement')
 //const dec_interval = setInterval(auto_dec, 1000)
 function auto_dec() {
-    step = parseInt(step_value.innerText)
-    console.log(step)
     action("-")
 }
     
@@ -60,12 +60,11 @@ const dec_interval = autoDecrementBtn.addEventListener('click', (e) => {
         id = setInterval(auto_dec, 1000)
 })
     
+
 //--- Auto Increment Button ------
 const autoIncrementBtn = document.querySelector('#auto_increment')
 
 function auto_inc() {
-    step = parseInt(step_value.innerText)
-    console.log(step)
     action("+")
 }
 
