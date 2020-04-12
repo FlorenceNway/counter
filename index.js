@@ -75,3 +75,10 @@ const inc_interval = autoIncrementBtn.addEventListener('click', (e) => {
 })
 
 
+/*
+ * the auto counter should stop
+ */
+const autoStopBtn = document.querySelector('#stop_auto')
+autoStopBtn.addEventListener('click', (e) => {
+    clearInterval(id)
+})
