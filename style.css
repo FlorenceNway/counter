@@ -34,3 +34,14 @@ h1 {
     display: flex;
     justify-content: space-evenly;
 }
+
+.result_area {
+    border: 1px solid black;
+    text-align: center;
+    margin: 20px;
+}
+
+.counter_value {
+    color: red;
+    font-size: 1.5em;
+}
