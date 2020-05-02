@@ -39,6 +39,10 @@ h1 {
 .auto_inc_dec button:first-child {
     background-color: green;
 }
+.auto_inc_dec button:hover {
+    transform: scale(0.7); 
+    cursor: pointer;
+}
 
 
 .auto_inc_dec {
