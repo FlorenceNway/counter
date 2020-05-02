@@ -1,0 +1,30 @@
+.container {
+    margin: 0 auto;
+}
+
+section {
+    width: 60%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.inc_dec button{
+    background: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.step_form button{
+    padding: 10px;
+    background: pink;
+}
+
+.auto_inc_dec button{
+    background: palevioletred;
+    padding: 8px;
+    margin: 5px;
+}
