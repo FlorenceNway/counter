@@ -28,3 +28,9 @@ h1 {
     padding: 8px;
     margin: 5px;
 }
+.auto_inc_dec {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
