@@ -27,7 +27,20 @@ h1 {
     background: palevioletred;
     padding: 8px;
     margin: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: white;
 }
+.auto_inc_dec button:last-child {
+    background-color: blue;
+}
+
+.auto_inc_dec button:first-child {
+    background-color: green;
+}
+
+
 .auto_inc_dec {
     margin: 0 auto;
     width: 90%;
