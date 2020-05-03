@@ -1,6 +1,12 @@
 .container {
     margin: 0 auto;
+    font-family: "aventir";
 }
+
+@font-face {
+    font-family: "aventir";
+    src: url(./font/AvenirLTStd-Medium.otf);
+  }
 
 section {
     width: 60%;
