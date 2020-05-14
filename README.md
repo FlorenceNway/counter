@@ -1,6 +1,6 @@
 # Counters
 
-github link : https://florencenway.github.io/counter/
+Link : https://florencenway.github.io/counter/
 
 ![demo gif](./demo.gif)
 
